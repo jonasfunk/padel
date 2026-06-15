@@ -13,7 +13,7 @@ export default function App() {
 
   if (activeScreen === 'match' && tournament) {
     return (
-      <div className="flex flex-col min-h-dvh">
+      <div className="flex flex-col h-full">
         <ThemeToggle />
         <MatchScreen />
       </div>
@@ -21,7 +21,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col min-h-dvh">
+    <div className="flex flex-col h-full">
       <ThemeToggle />
       {activeScreen === 'players' && <PlayersScreen />}
       {activeScreen === 'standings' && <StandingsScreen />}
