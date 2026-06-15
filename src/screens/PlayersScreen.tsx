@@ -47,7 +47,7 @@ function PlayerModal({ initial, onSave, onClose }: PlayerModalProps) {
             placeholder="Navn"
             value={profile.name}
             onChange={(e) => setProfile((p) => ({ ...p, name: e.target.value }))}
-            className="flex-1 rounded-lg border border-hairline bg-canvas text-ink px-3 py-2.5 text-sm font-medium placeholder:text-subtle focus:border-ink outline-none transition-colors"
+            className="flex-1 rounded-lg border border-hairline bg-canvas text-ink px-3 py-2.5 text-base font-medium placeholder:text-subtle focus:border-ink outline-none transition-colors"
             autoFocus
           />
         </div>
