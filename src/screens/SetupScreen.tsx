@@ -145,7 +145,7 @@ export function SetupScreen() {
         )}
       </div>
 
-      <div className="fixed bottom-16 left-0 right-0 p-4 bg-canvas border-t border-hairline">
+      <div className="fixed bottom-20 left-0 right-0 p-4 bg-canvas border-t border-hairline">
         <button
           onClick={handleStart}
           disabled={!canStart}
