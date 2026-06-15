@@ -23,11 +23,13 @@ export default function App() {
   return (
     <div className="flex flex-col h-full">
       <ThemeToggle />
-      {activeScreen === 'players' && <PlayersScreen />}
-      {activeScreen === 'standings' && <StandingsScreen />}
-      {(activeScreen === 'schedule' || activeScreen === 'setup') && (
-        tournament ? <ScheduleScreen /> : <SetupScreen />
-      )}
+      <div className="flex-1 min-h-0">
+        {activeScreen === 'players' && <PlayersScreen />}
+        {activeScreen === 'standings' && <StandingsScreen />}
+        {(activeScreen === 'schedule' || activeScreen === 'setup') && (
+          tournament ? <ScheduleScreen /> : <SetupScreen />
+        )}
+      </div>
       <BottomNav />
     </div>
   );

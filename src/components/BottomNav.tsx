@@ -12,7 +12,7 @@ export function BottomNav() {
   const active = state.activeScreen;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-canvas border-t border-hairline z-40 flex">
+    <nav className="flex-shrink-0 bg-canvas border-t border-hairline flex">
       {tabs.map((tab) => {
         const isActive =
           active === tab.screen ||
