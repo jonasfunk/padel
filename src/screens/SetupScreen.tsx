@@ -43,7 +43,7 @@ export function SetupScreen() {
         <h1 className="text-2xl font-semibold tracking-[-0.04em] text-ink">Ny turnering</h1>
       </div>
 
-      <div className="flex-1 overflow-y-auto pb-48">
+      <div className="flex-1 overflow-y-auto pb-56">
         <div className="px-4 pt-5">
           <p className="text-[11px] font-medium text-mute uppercase tracking-widest mb-3">
             Spillere ({selectedIds.size} valgt)
