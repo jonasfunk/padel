@@ -43,7 +43,7 @@ export function ScheduleScreen() {
         )}
       </div>
 
-      <div className={`flex-1 overflow-y-auto px-4 pt-4 space-y-5 ${isFinished ? 'pb-44' : 'pb-24'}`}>
+      <div className={`flex-1 overflow-y-auto px-4 pt-4 space-y-5 ${isFinished ? 'pb-52' : 'pb-24'}`}>
         {/* Current standings */}
         <div className="bg-canvas rounded-xl border border-hairline overflow-hidden shadow-card">
           <div className="px-4 py-2.5 border-b border-hairline">
@@ -113,7 +113,7 @@ export function ScheduleScreen() {
 
       {/* Finished actions */}
       {isFinished && (
-        <div className="fixed bottom-16 left-0 right-0 px-4 pb-3 pt-3 bg-gradient-to-t from-canvas-soft via-canvas-soft to-transparent space-y-2">
+        <div className="fixed bottom-20 left-0 right-0 px-4 pb-3 pt-3 bg-gradient-to-t from-canvas-soft via-canvas-soft to-transparent space-y-2">
           <button
             onClick={playAgain}
             className="w-full py-3.5 rounded-full bg-primary text-on-primary text-sm font-medium tracking-[-0.01em] active:opacity-70 transition-opacity"
